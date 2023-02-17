@@ -113,7 +113,8 @@ button {
 .container {
     display: flex;
     justify-content: space-around;
-    gap: 20px;
+    gap: 60px;
+    color: #1f2937;
 }
 
 .information h2 {
@@ -125,6 +126,20 @@ button {
 .card {
     max-width: 150px;
 }
+
+.image-placeholder::before {
+    content: "";
+    display: block;
+    height: 0;
+    padding-bottom: 75%;
+    background-image: url('placeholder-image.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #1a6df0;
+    border-radius: 8px;
+  }
+  
 
 /* quotes / content 3 */
 
